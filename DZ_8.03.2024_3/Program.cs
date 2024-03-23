@@ -9,71 +9,71 @@
 using static System.Console;
 class MusicalInstruments
 {
-    protected string Название;
+    protected string Name;
 
-    public MusicalInstruments(string название)
+    public MusicalInstruments(string name)
     {
-        Название = название;
+        Name = name;
     }
 
     public virtual void Sound()
     {
-        WriteLine($"Музыкальный инструмент {Название} издает звук.");
+        WriteLine($"Музыкальный инструмент {Name} издает звук.");
     }
 
     public void Show()
     {
-        WriteLine($"Название музыкального инструмента: {Название}");
+        WriteLine($"Название музыкального инструмента: {Name}");
     }
 
     public virtual void Desc()
     {
-        WriteLine($"Это музыкальный инструмент {Название}.");
+        WriteLine($"Это музыкальный инструмент {Name}.");
     }
 
     public virtual void History()
     {
-        WriteLine($"Музыкальный инструмент {Название} был изобретен в прошлом.");
+        WriteLine($"Музыкальный инструмент {Name} был изобретен в прошлом.");
     }
 }
 
 class Violin : MusicalInstruments
 {
-    public Violin(string название) : base(название) { }
+    public Violin(string name) : base(name) { }
 
     public override void Sound()
     {
-        WriteLine($"Скрипка {Название} издает красивый звук скрипичного струнного инструмента.");
+        WriteLine($"Скрипка {Name} издает красивый звук скрипичного струнного инструмента.");
     }
 }
 
 class Trombone : MusicalInstruments
 {
-    public Trombone(string название) : base(название) { }
+    public Trombone(string name) : base(name) { }
 
     public override void Sound()
     {
-        WriteLine($"Тромбон {Название} издает мощный звук медного духового инструмента.");
+        WriteLine($"Тромбон {Name} издает мощный звук медного духового инструмента.");
     }
 }
 
 class Ukulele : MusicalInstruments
 {
-    public Ukulele(string название) : base(название) { }
+    public Ukulele(string name) : base(name) { }
 
     public override void Sound()
     {
-        WriteLine($"Укулеле {Название} издает легкий и приятный звук струнного инструмента.");
+        WriteLine($"Укулеле {Name} издает легкий и приятный звук струнного инструмента.");
     }
 }
 
 class Cello : MusicalInstruments
 {
-    public Cello(string название) : base(название) { }
+    public Cello(string name) : base(name) { }
 
     public override void Sound()
     {
-        WriteLine($"Виолончель {Название} издает плавный и глубокий звук струнного инструмента.");
+        WriteLine($"Виолончель {Name} издает плавный и глубокий звук струнного инструмента.");
     }
 }
 
